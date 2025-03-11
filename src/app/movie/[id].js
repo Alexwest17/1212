@@ -10,7 +10,7 @@ export default function MovieDetail() {
 
   useEffect(() => {
     if (id) {
-      fetch(`https://www.omdbapi.com/?apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}&i=${id}`)
+      fetch(`https://www.omdbapi.com/?apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}&i=a2b07930${id}`)
         .then((res) => res.json())
         .then((data) => {
           setMovie(data);
